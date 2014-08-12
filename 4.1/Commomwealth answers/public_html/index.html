@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Commonwealth Games Quiz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Commonwealth Games Quiz</h2>
+        <form action = 'process.php' method  = "POST">
+	<fieldset>
+		<legend>Quiz Items</legend>
+                <label>How many countries are in the 2014 Commonwealth Games?</label> <input type='text' name= 'countryNum'><br><br>
+                <label>The first medal went to which sport:</label><br>
+	          <input type='radio' name='sport' value='judo'>Judo<br>
+	          <input type='radio' name='sport' value='shooting'>Shooting<br>
+                  <input type='radio' name='sport' value='athletics'>Athletics<br>
+                  <input type='radio' name='sport' value='marathon'>Marathon<br><br>
+                  <label>Which of these countries are not in the the top 3 medal count?</label><br>
+                  <input type='radio' name='countries' value='canada'><img src="can.png" alt=""/>
+                  <input type='radio' name='countries' value='australia'><img src="aus.png" alt=""/>
+                  <input type='radio' name='countries' value='nz'><img src="nz.png" alt=""/>
+                  <input type='radio' name='countries' value='scotland'><img src="sco.png" alt=""/><br><br>
+                  <label>Where were the last four Commonwealth games played?</label><br>
+                  <input type='checkbox' name='location[]' value='auckland'>Auckland<br>
+                  <input type='checkbox' name='location[]' value='victoria'>Victoria<br>
+                  <input type='checkbox' name='location[]' value='kuala lumpur'>Kuala Lumpur<br>
+                  <input type='checkbox' name='location[]' value='manchester'>Manchester<br>
+                  <input type='checkbox' name='location[]' value='melbourne'>Melbourne<br>
+                  <input type='checkbox' name='location[]' value='delhi'>Delhi<br><br>
+                  <label>Which recognized sport has never been in the Commonwealth games?</label><br>
+                  <select name='sports'>
+                      <option value='noSelection'>Please select a sport</option>
+                      <option value='volleyball'>Volleyball</option>
+                      <option value='tenpin'>Ten Pin Bowling</option>
+                      <option value='waterpolo'>Water Polo</option>
+                      <option value='basketball'>Basketball</option>
+                  </select>
+	</fieldset>
+	<br>
+	<input type='submit' name = 'submit'  value='Submit'>
+</form>
+    </body>
+</html>
